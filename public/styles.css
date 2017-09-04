@@ -1,11 +1,11 @@
 .breathVertical {
-    margin-top:5px;
-    margin-bottom:5px;
+    margin-top:10px;
+    margin-bottom:10px;
 }
 
 .breathHorizontal {
-    margin-left:5px;
-    margin-right:5px;
+    margin-left:10px;
+    margin-right:10px;
 }
 
 #title{
@@ -32,29 +32,48 @@ input[type=checkbox].check_active{
     border: 1px solid deepskyblue;
     margin-right: 30px;
     float: left;
+    border-radius: 3px;
 }
 
-input[type=checkbox].check_complete{
+/*input[type=checkbox].check_complete{*/
+    /*-webkit-appearance: none;*/
+    /*width: 15px;*/
+    /*height: 15px;*/
+    /*!*border: 1px solid deepskyblue;*!*/
+    /*background-color: deepskyblue;*/
+    /*margin-right: 30px;*/
+    /*float: left;*/
+    /*border-radius: 3px;*/
+/*}*/
+
+
+.regular-checkbox {
     -webkit-appearance: none;
     width: 15px;
     height: 15px;
-    background-color: deepskyblue;
     margin-right: 30px;
     float: left;
+    background-color: deepskyblue;
+    border-radius: 3px;
+    display: block;
+    position: relative;
 }
 
-input[type=checkbox].checkbox:checked {
-    background-color: #1e90ff;
+.regular-checkbox:checked {
+    background-color: deepskyblue;
 }
 
-input[type=checkbox].check_complete:checked:after{
-    /*background-color: white;*/
+.regular-checkbox:checked:after {
     content: '\2714';
-    font-size: 15px;
+    font-size: 12px;
     position: absolute;
     top: 0px;
     left: 3px;
     color: white;
+}
+
+.completed-text{
+    margin-left: 50px;
 }
 
 button.delete_button{
@@ -79,10 +98,20 @@ div.todoStatusACTIVE {
 }
 
 #add_todos{
-    border-bottom: 1px solid black;
+    /*border-bottom: 1px solid black;*/
+    margin-left: 20px;
+    margin-right: 80px;
+    padding-bottom: 5px;
+}
+
+#add_todo_button{
+    color: black;
+    background-color: lightskyblue;
 }
 
 #complete_box{
+    border-top: 1px solid black;
+    padding-top: 5px;
     padding-left: 20px;
     border-bottom: 1px solid black;
 }
@@ -90,18 +119,15 @@ div.todoStatusACTIVE {
 div.todoStatusCOMPLETE{
     color : green;
     text-decoration : line-through;
-
     display: block;
-    /*color : blue;*/
     margin-left: 20px;
     margin-right: 80px;
     padding-bottom: 5px;
-
 }
 
 #delete_box{
+    padding-top: 5px;
     padding-left: 20px;
-    border-bottom: 1px solid black;
 }
 
 div.todoStatusDELETED {

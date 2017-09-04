@@ -66,17 +66,24 @@ function createTodoElement(id, todo_object){
         var active_checkbox = document.createElement("input");
         active_checkbox.type = "checkbox";
         active_checkbox.setAttribute("onchange","activateTodoAJAX("+id+")");
-        active_checkbox.setAttribute("checked","");
-        active_checkbox.setAttribute("class","check_complete");
+        active_checkbox.setAttribute("checked","checked");
+        active_checkbox.setAttribute("class","regular-checkbox");
         todo_element.appendChild(active_checkbox);
 
-        todo_element.innerHTML += todo_object.title;
+        var completed_text = document.createElement("div");
+        completed_text.innerHTML=todo_object.title;
+        completed_text.setAttribute("class", "completed-text");
+
+        // todo_element.innerHTML += todo_object.title;
 
         var delete_button = document.createElement("button");
         delete_button.innerText = "X";
+        delete_button.setAttribute("class","btn btn-primary");
         delete_button.setAttribute("onclick", "deleteTodoAJAX("+id+")");
         delete_button.setAttribute("class", "breathHorizontal delete_button");
-        todo_element.appendChild(delete_button);
+        completed_text.appendChild(delete_button)
+        todo_element.appendChild(completed_text);
+        // todo_element.appendChild(delete_button);
     }
 
     if (todo_object.status == "DELETED"){
