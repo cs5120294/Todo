@@ -41,33 +41,42 @@ function addTodoElements(todos_data_json){
 function createTodoElement(id, todo_object){
 
     var todo_element = document.createElement("div");
-    todo_element.innerText = todo_object.title;
-    // HW: Read custom data-* attributes
+
     todo_element.setAttribute("data-id", id);
 
     todo_element.setAttribute("class", "todoStatus"+ todo_object.status + " " + "breathVertical");
 
-
     if (todo_object.status == "ACTIVE"){
-        var complete_button = document.createElement("button");
-        complete_button.innerText = "Mark as Complete";
-        complete_button.setAttribute("onclick", "completeTodoAJAX("+id+")");
-        complete_button.setAttribute("class", "breathHorizontal");
-        todo_element.appendChild(complete_button);
-
+        var complete_checkbox = document.createElement("input");
+        complete_checkbox.type = "checkbox";
+        complete_checkbox.setAttribute("onchange","completeTodoAJAX("+id+")");
+        todo_element.appendChild(complete_checkbox);
+        // var complete_button = document.createElement("button");
+        // complete_button.innerText = "Mark as Complete";
+        // complete_button.setAttribute("onclick", "completeTodoAJAX("+id+")");
+        // complete_button.setAttribute("class", "breathHorizontal");
+        // todo_element.appendChild(complete_button);
+        todo_element.innerHTML += todo_object.title;
         var delete_button = document.createElement("button");
-        delete_button.innerText = "Delete";
+        delete_button.innerText = "X";
         delete_button.setAttribute("onclick", "deleteTodoAJAX("+id+")");
         delete_button.setAttribute("class", "breathHorizontal");
         todo_element.appendChild(delete_button);
     }
 
     if (todo_object.status == "COMPLETE"){
-        var active_button = document.createElement("button");
-        active_button.innerText = "Mark as Active";
-        active_button.setAttribute("onclick", "completeTodoAJAX("+id+")");
-        active_button.setAttribute("class", "breathHorizontal");
-        todo_element.appendChild(active_button);
+        // var active_button = document.createElement("button");
+        // active_button.innerText = "Mark as Active";
+        // active_button.setAttribute("onclick", "completeTodoAJAX("+id+")");
+        // active_button.setAttribute("class", "breathHorizontal");
+        // todo_element.appendChild(active_button);
+        var active_checkbox = document.createElement("input");
+        active_checkbox.type = "checkbox";
+        active_checkbox.setAttribute("onchange","activateTodoAJAX("+id+")");
+        active_checkbox.setAttribute("checked",true);
+        todo_element.appendChild(active_checkbox);
+
+        todo_element.innerHTML += todo_object.title;
 
         var delete_button = document.createElement("button");
         delete_button.innerText = "Delete";
@@ -81,8 +90,9 @@ function createTodoElement(id, todo_object){
         // Add Delete Buttons for ACTIVE, COMPLETE TODO ITEMS
         // add a delete button
         // HW : Write this code
-
+        todo_element.innerHTML += todo_object.title;
     }
+
     return todo_element;
 }
 
@@ -124,13 +134,30 @@ function addTodoAJAX(){
 }
 
 function completeTodoAJAX(id){
-
-    // Make a AJAX Request to update todo with the above id
-    // If Response is 200 : refreshTodoElements
     var xhr = new XMLHttpRequest();
     xhr.open("PUT", "/api/todos/"+id, true);
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     data = "todo_status=COMPLETE";
+
+    xhr.onreadystatechange = function(){
+
+        if (xhr.readyState == RESPONSE_DONE) {
+            if (xhr.status == STATUS_OK) {
+                addTodoElements(xhr.responseText);
+            }
+            else{
+                console.log(xhr.responseText);
+            }
+        }
+    }
+    xhr.send(data);
+}
+
+function activateTodoAJAX(id){
+    var xhr = new XMLHttpRequest();
+    xhr.open("PUT", "/api/todos/"+id, true);
+    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    data = "todo_status=ACTIVE";
 
     xhr.onreadystatechange = function(){
 
