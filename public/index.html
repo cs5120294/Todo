@@ -1,4 +1,4 @@
-<html>
+<html id="page">
 
 <head>
     <title> Todo App</title>
@@ -13,9 +13,12 @@
 
 <h1  id="title">My Todos</h1>
 
-<!--<button onclick="getTodosAJAX()">Refresh Todos</button>-->
-<h4>Active Todos</h4>
-<div id="todos_list_div_active"></div>
+<div id="active_box">
+    <h4>Active Todos</h4>
+    <div id="todos_list_div_active"></div>
+
+</div>
+
 
 <div id="add_todos">
     <h3>Add Todo</h3>
@@ -24,10 +27,16 @@
     <br> <br>
 </div>
 
-<h4>Completed Todos</h4>
-<div id="todos_list_div_completed"></div>
-<h4>Deleted Todos</h4>
-<div id="todos_list_div_deleted"></div>
+<div id="complete_box">
+    <h4>Completed Todos</h4>
+    <div id="todos_list_div_completed"></div>
+</div>
+
+<div id="delete_box">
+    <h4>Deleted Todos</h4>
+    <div id="todos_list_div_deleted"></div>
+</div>
+
 <br>
 
 <script src="/script.js" type="text/javascript"></script>

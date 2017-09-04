@@ -13,36 +13,103 @@
     text-align: center;
 }
 
+#page{
+    background-color: black;
+}
+
 #main{
-    background-color: #FFFFFF;
-    width: 400px;
+    width: 500px;
     margin: 50px auto;
-    border: 1px solid black;
+    border: 30px solid gainsboro;
+    border-width: thick;
+}
+
+input[type=checkbox].check_active{
+    display: block;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid deepskyblue;
+    margin-right: 30px;
+    float: left;
+}
+
+input[type=checkbox].check_complete{
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: deepskyblue;
+    margin-right: 30px;
+    float: left;
+}
+
+input[type=checkbox].checkbox:checked {
+    background-color: #1e90ff;
+}
+
+input[type=checkbox].check_complete:checked:after{
+    /*background-color: white;*/
+    content: '\2714';
+    font-size: 15px;
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    color: white;
+}
+
+button.delete_button{
+    -webkit-appearance: none;
+    color: red;
+    background: transparent;
+    border: transparent;
+    float: right;
+}
+
+#active_box{
+    padding-left: 20px;
+    border-bottom: 1px solid black;
 }
 
 div.todoStatusACTIVE {
+    display: block;
     color : blue;
-}
-
-#todos_list_div_active{
-    border-bottom: 1px solid black;
+    margin-left: 20px;
+    margin-right: 80px;
+    padding-bottom: 5px;
 }
 
 #add_todos{
     border-bottom: 1px solid black;
 }
 
-#todos_list_div_completed{
+#complete_box{
+    padding-left: 20px;
     border-bottom: 1px solid black;
 }
 
 div.todoStatusCOMPLETE{
     color : green;
     text-decoration : line-through;
+
+    display: block;
+    /*color : blue;*/
+    margin-left: 20px;
+    margin-right: 80px;
+    padding-bottom: 5px;
+
+}
+
+#delete_box{
+    padding-left: 20px;
+    border-bottom: 1px solid black;
 }
 
 div.todoStatusDELETED {
     color : red;
     text-decoration : line-through;
+    display: block;
+    margin-left: 50px;
+    margin-right: 80px;
+    padding-bottom: 5px;
 }
 

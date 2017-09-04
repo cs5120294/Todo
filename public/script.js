@@ -50,18 +50,15 @@ function createTodoElement(id, todo_object){
         var complete_checkbox = document.createElement("input");
         complete_checkbox.type = "checkbox";
         complete_checkbox.setAttribute("onchange","completeTodoAJAX("+id+")");
+        complete_checkbox.setAttribute("class","check_active");
         todo_element.appendChild(complete_checkbox);
-        // var complete_button = document.createElement("button");
-        // complete_button.innerText = "Mark as Complete";
-        // complete_button.setAttribute("onclick", "completeTodoAJAX("+id+")");
-        // complete_button.setAttribute("class", "breathHorizontal");
-        // todo_element.appendChild(complete_button);
         todo_element.innerHTML += todo_object.title;
+
         var delete_button = document.createElement("button");
         delete_button.innerText = "X";
         delete_button.setAttribute("class","btn btn-primary");
         delete_button.setAttribute("onclick", "deleteTodoAJAX("+id+")");
-        delete_button.setAttribute("class", "breathHorizontal");
+        delete_button.setAttribute("class", "breathHorizontal delete_button");
         todo_element.appendChild(delete_button);
     }
 
@@ -69,15 +66,16 @@ function createTodoElement(id, todo_object){
         var active_checkbox = document.createElement("input");
         active_checkbox.type = "checkbox";
         active_checkbox.setAttribute("onchange","activateTodoAJAX("+id+")");
-        active_checkbox.setAttribute("checked",true);
+        active_checkbox.setAttribute("checked","");
+        active_checkbox.setAttribute("class","check_complete");
         todo_element.appendChild(active_checkbox);
 
         todo_element.innerHTML += todo_object.title;
 
         var delete_button = document.createElement("button");
-        delete_button.innerText = "Delete";
+        delete_button.innerText = "X";
         delete_button.setAttribute("onclick", "deleteTodoAJAX("+id+")");
-        delete_button.setAttribute("class", "breathHorizontal");
+        delete_button.setAttribute("class", "breathHorizontal delete_button");
         todo_element.appendChild(delete_button);
     }
 
