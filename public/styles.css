@@ -1,25 +1,40 @@
-/*
-
-Rule - Selector, Descriptor
-
-*/
-
 .breathVertical {
     margin-top:5px;
     margin-bottom:5px;
 }
-
 
 .breathHorizontal {
     margin-left:5px;
     margin-right:5px;
 }
 
-div.todoStatusACTIVE {
+#title{
+    background-color : #faff60;
+    text-align: center;
+}
 
+#main{
+    background-color: #FFFFFF;
+    width: 400px;
+    margin: 50px auto;
+    border: 1px solid black;
+}
+
+div.todoStatusACTIVE {
     color : blue;
 }
 
+#todos_list_div_active{
+    border-bottom: 1px solid black;
+}
+
+#add_todos{
+    border-bottom: 1px solid black;
+}
+
+#todos_list_div_completed{
+    border-bottom: 1px solid black;
+}
 
 div.todoStatusCOMPLETE{
     color : green;

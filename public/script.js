@@ -59,17 +59,13 @@ function createTodoElement(id, todo_object){
         todo_element.innerHTML += todo_object.title;
         var delete_button = document.createElement("button");
         delete_button.innerText = "X";
+        delete_button.setAttribute("class","btn btn-primary");
         delete_button.setAttribute("onclick", "deleteTodoAJAX("+id+")");
         delete_button.setAttribute("class", "breathHorizontal");
         todo_element.appendChild(delete_button);
     }
 
     if (todo_object.status == "COMPLETE"){
-        // var active_button = document.createElement("button");
-        // active_button.innerText = "Mark as Active";
-        // active_button.setAttribute("onclick", "completeTodoAJAX("+id+")");
-        // active_button.setAttribute("class", "breathHorizontal");
-        // todo_element.appendChild(active_button);
         var active_checkbox = document.createElement("input");
         active_checkbox.type = "checkbox";
         active_checkbox.setAttribute("onchange","activateTodoAJAX("+id+")");
@@ -86,10 +82,6 @@ function createTodoElement(id, todo_object){
     }
 
     if (todo_object.status == "DELETED"){
-        // HW : Add this functionality
-        // Add Delete Buttons for ACTIVE, COMPLETE TODO ITEMS
-        // add a delete button
-        // HW : Write this code
         todo_element.innerHTML += todo_object.title;
     }
 

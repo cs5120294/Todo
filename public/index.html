@@ -3,24 +3,30 @@
 <head>
     <title> Todo App</title>
     <link rel="stylesheet" href="/styles.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 
-<body>
+<body id="main">
 
-<h1>My Todos</h1>
+<h1  id="title">My Todos</h1>
 
 <!--<button onclick="getTodosAJAX()">Refresh Todos</button>-->
-<h1>Active Todos</h1>
+<h4>Active Todos</h4>
 <div id="todos_list_div_active"></div>
-<h1>Add Todo</h1>
-<input type="text" id="new_todo_input" placeholder="Todo Title Goes Here"/>
-<input type="button" value="Add Todo" onclick="addTodoAJAX()"/>
 
+<div id="add_todos">
+    <h3>Add Todo</h3>
+    <input type="text" id="new_todo_input" placeholder="Todo Title Goes Here"/>
+    <input type="button" value="Add Todo" onclick="addTodoAJAX()"/>
+    <br> <br>
+</div>
 
-<h1>Completed Todos</h1>
+<h4>Completed Todos</h4>
 <div id="todos_list_div_completed"></div>
-<h1>Deleted Todos</h1>
+<h4>Deleted Todos</h4>
 <div id="todos_list_div_deleted"></div>
 <br>
 

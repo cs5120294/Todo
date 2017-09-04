@@ -14,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            <state relative-caret-position="289">
+              <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -57,18 +57,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="-236">
+              <caret line="6" column="55" lean-forward="false" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="76" column="50" lean-forward="true" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="50" />
+            <state relative-caret-position="475">
+              <caret line="61" column="62" lean-forward="false" selection-start-line="61" selection-start-column="62" selection-end-line="61" selection-end-column="62" />
               <folding>
                 <element signature="n#!!block;n#addTodoElements#0" expanded="false" />
                 <element signature="e#808#1400#0" expanded="false" />
@@ -76,21 +76,21 @@
                 <element signature="e#1050#1195#0" expanded="false" />
                 <element signature="e#1247#1390#0" expanded="false" />
                 <element signature="n#!!block;n#getTodosAJAX#0" expanded="false" />
-                <element signature="e#4058#4227#0" expanded="false" />
-                <element signature="e#4104#4221#0" expanded="false" />
-                <element signature="e#4145#4211#0" expanded="false" />
+                <element signature="e#3639#3808#0" expanded="false" />
+                <element signature="e#3685#3802#0" expanded="false" />
+                <element signature="e#3726#3792#0" expanded="false" />
                 <element signature="n#!!block;n#addTodoAJAX#0" expanded="false" />
-                <element signature="e#4594#4847#0" expanded="false" />
-                <element signature="e#4642#4841#0" expanded="false" />
-                <element signature="e#4685#4751#0" expanded="false" />
-                <element signature="e#4769#4831#0" expanded="false" />
+                <element signature="e#4175#4428#0" expanded="false" />
+                <element signature="e#4223#4422#0" expanded="false" />
+                <element signature="e#4266#4332#0" expanded="false" />
+                <element signature="e#4350#4412#0" expanded="false" />
                 <element signature="n#!!block;n#completeTodoAJAX#0" expanded="false" />
                 <element signature="n#!!block;n#activateTodoAJAX#0" expanded="false" />
                 <element signature="n#!!block;n#deleteTodoAJAX#0" expanded="false" />
-                <element signature="e#6185#6437#0" expanded="false" />
-                <element signature="e#6233#6431#0" expanded="false" />
-                <element signature="e#6276#6342#0" expanded="false" />
-                <element signature="e#6359#6421#0" expanded="false" />
+                <element signature="e#5766#6018#0" expanded="false" />
+                <element signature="e#5814#6012#0" expanded="false" />
+                <element signature="e#5857#5923#0" expanded="false" />
+                <element signature="e#5940#6002#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -106,11 +106,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/styles.css" />
         <option value="$PROJECT_DIR$/seed.js" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/script.js" />
+        <option value="$PROJECT_DIR$/public/styles.css" />
       </list>
     </option>
   </component>
@@ -204,12 +204,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1504500895464</updated>
-      <workItem from="1504500896839" duration="16179000" />
+      <workItem from="1504500896839" duration="19186000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16179000" />
+    <option name="totallyTimeSpent" value="19186000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -261,14 +261,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -279,16 +271,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="-236">
+          <caret line="6" column="55" lean-forward="false" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="76" column="50" lean-forward="true" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="50" />
+        <state relative-caret-position="475">
+          <caret line="61" column="62" lean-forward="false" selection-start-line="61" selection-start-column="62" selection-end-line="61" selection-end-column="62" />
           <folding>
             <element signature="n#!!block;n#addTodoElements#0" expanded="false" />
             <element signature="e#808#1400#0" expanded="false" />
@@ -296,22 +288,30 @@
             <element signature="e#1050#1195#0" expanded="false" />
             <element signature="e#1247#1390#0" expanded="false" />
             <element signature="n#!!block;n#getTodosAJAX#0" expanded="false" />
-            <element signature="e#4058#4227#0" expanded="false" />
-            <element signature="e#4104#4221#0" expanded="false" />
-            <element signature="e#4145#4211#0" expanded="false" />
+            <element signature="e#3639#3808#0" expanded="false" />
+            <element signature="e#3685#3802#0" expanded="false" />
+            <element signature="e#3726#3792#0" expanded="false" />
             <element signature="n#!!block;n#addTodoAJAX#0" expanded="false" />
-            <element signature="e#4594#4847#0" expanded="false" />
-            <element signature="e#4642#4841#0" expanded="false" />
-            <element signature="e#4685#4751#0" expanded="false" />
-            <element signature="e#4769#4831#0" expanded="false" />
+            <element signature="e#4175#4428#0" expanded="false" />
+            <element signature="e#4223#4422#0" expanded="false" />
+            <element signature="e#4266#4332#0" expanded="false" />
+            <element signature="e#4350#4412#0" expanded="false" />
             <element signature="n#!!block;n#completeTodoAJAX#0" expanded="false" />
             <element signature="n#!!block;n#activateTodoAJAX#0" expanded="false" />
             <element signature="n#!!block;n#deleteTodoAJAX#0" expanded="false" />
-            <element signature="e#6185#6437#0" expanded="false" />
-            <element signature="e#6233#6431#0" expanded="false" />
-            <element signature="e#6276#6342#0" expanded="false" />
-            <element signature="e#6359#6421#0" expanded="false" />
+            <element signature="e#5766#6018#0" expanded="false" />
+            <element signature="e#5814#6012#0" expanded="false" />
+            <element signature="e#5857#5923#0" expanded="false" />
+            <element signature="e#5940#6002#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
