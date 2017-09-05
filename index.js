@@ -70,7 +70,5 @@ app.put("/api/todos/:id", function(req, res) {
 
         res.json(todos_db.todos);
     }
-
-
 });
 app.listen(3000);

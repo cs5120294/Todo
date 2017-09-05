@@ -132,23 +132,24 @@ function addTodoAJAX(){
     xhr.send(data);
 }
 
-function hideCompletedToDoAJAX(){
-    var elem = document.getElementById(TODOS_LIST_ID_COMPLETED);
-    if(elem.style.display=='none'){
-        elem.style.display = 'block';
+function hideToDoAJAX(input){
+    if(input.id == HIDE_COMPLETE_BUTTON_ID){
+        var elem = document.getElementById(TODOS_LIST_ID_COMPLETED);
+        if(elem.style.display=='none'){
+            elem.style.display = 'block';
+        }
+        else{
+            elem.style.display = 'none';
+        }
     }
-    else{
-        elem.style.display = 'none';
-    }
-}
-
-function hideDeletedToDoAJAX(){
-    var elem = document.getElementById(TODOS_LIST_ID_DELETED);
-    if(elem.style.display=='none'){
-        elem.style.display = 'block';
-    }
-    else{
-        elem.style.display = 'none';
+    else if(input.id == HIDE_DELETE_BUTTON_ID){
+        var elem = document.getElementById(TODOS_LIST_ID_DELETED);
+        if(elem.style.display=='none'){
+            elem.style.display = 'block';
+        }
+        else{
+            elem.style.display = 'none';
+        }
     }
 }
 

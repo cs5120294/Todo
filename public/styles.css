@@ -57,6 +57,7 @@ input[type=checkbox].check_active{
     text-align: left;
     text-decoration: underline;
     padding-right: 30px;
+    outline: none;
 }
 
 #hide_button_delete{
@@ -70,6 +71,7 @@ input[type=checkbox].check_active{
     font-size: 12px;
     text-decoration: underline;
     text-align: left;
+    outline: none;
 }
 
 .regular-checkbox {
