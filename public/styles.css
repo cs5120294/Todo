@@ -46,6 +46,31 @@ input[type=checkbox].check_active{
     /*border-radius: 3px;*/
 /*}*/
 
+#hide_button_complete{
+    -webkit-appearance: none;
+    width: 150px;
+    color: blue;
+    background: transparent;
+    border: transparent;
+    float: right;
+    font-size: 12px;
+    text-align: left;
+    text-decoration: underline;
+    padding-right: 30px;
+}
+
+#hide_button_delete{
+    -webkit-appearance: none;
+    width: 150px;
+    color: blue;
+    background: transparent;
+    border: transparent;
+    float: right;
+    padding-right: 30px;
+    font-size: 12px;
+    text-decoration: underline;
+    text-align: left;
+}
 
 .regular-checkbox {
     -webkit-appearance: none;

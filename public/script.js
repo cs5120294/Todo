@@ -5,6 +5,8 @@ const TODOS_LIST_ID_ACTIVE = "todos_list_div_active";
 const TODOS_LIST_ID_COMPLETED = "todos_list_div_completed";
 const TODOS_LIST_ID_DELETED = "todos_list_div_deleted";
 const NEW_TODO_INPUT_ID = "new_todo_input";
+const HIDE_COMPLETE_BUTTON_ID = "hide_button_complete";
+const HIDE_DELETE_BUTTON_ID = "hide_button_delete";
 
 window.onload = getTodosAJAX();
 
@@ -128,6 +130,26 @@ function addTodoAJAX(){
         }
     }
     xhr.send(data);
+}
+
+function hideCompletedToDoAJAX(){
+    var elem = document.getElementById(TODOS_LIST_ID_COMPLETED);
+    if(elem.style.display=='none'){
+        elem.style.display = 'block';
+    }
+    else{
+        elem.style.display = 'none';
+    }
+}
+
+function hideDeletedToDoAJAX(){
+    var elem = document.getElementById(TODOS_LIST_ID_DELETED);
+    if(elem.style.display=='none'){
+        elem.style.display = 'block';
+    }
+    else{
+        elem.style.display = 'none';
+    }
 }
 
 function completeTodoAJAX(id){
